@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "rootDir": "src",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "allowJs": true,
+    "watch": true,
+    "noUnusedLocals": true,
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "react": ["node_modules/@types/react"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ],
+  "types": ["typePatches"]
+}
